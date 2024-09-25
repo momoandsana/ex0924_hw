@@ -14,7 +14,7 @@ public class LogOutServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getSession().invalidate();
+        request.getSession().invalidate(); // 세션 초기화
         response.sendRedirect("LoginForm.jsp");
         System.out.println("세션 모두 초기화");
     }
