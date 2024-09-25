@@ -6,6 +6,7 @@ import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 
+// LoginOk.jsp 에서 이동
 @WebServlet(name="LogOutServlet",urlPatterns = "/logout")
 public class LogOutServlet extends HttpServlet {
     public LogOutServlet() {

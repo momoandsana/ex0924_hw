@@ -36,7 +36,8 @@ public class LoginServlet extends HttpServlet {
             session.setAttribute("userName", userName);
             System.out.println("세션에 내용 등록");
 
-            response.sendRedirect("LoginOk.jsp");
+//            response.sendRedirect("LoginOk.jsp");
+            response.sendRedirect("LoginOk_el_jstl.jsp");
         }
         else
         {
